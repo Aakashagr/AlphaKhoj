@@ -35,12 +35,10 @@ if len(st.session_state['data']) > 0:
     def btn_state(r):
         RT = time.time() - st.session_state['on_time'] 
         st.write(st.session_state['data'])
-        audio_file = open('xx.mp3', 'rb')
-        audio_bytes = audio_file.read()
     
         st.markdown("""
                 <audio autoplay>
-                <source src="audio/a.mp3" type="audio/mpeg" />
+                <source src="a.mp3" type="audio/mpeg" />
                 Your browser does not support the audio element.
                 </audio>""", 
                 # <video controls width="250" autoplay="true" muted="true" loop="true">
